@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widgets/destination_card.dart';
 import 'popular_places_screen.dart';
-import 'profile_screen.dart';  // Import your profile screen here
-
+import 'profile_screen.dart'; 
+import 'messages_screen.dart'; // Import the MessagesScreen
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int _currentIndex = 1;  // Default to Home
   final List<Widget> _screens = [
-    Placeholder(), // Replace with your MessagesScreen() if you have one
+    MessagesScreen(),  // Add your MessagesScreen here
     HomeMainScreen(), // Home content now wrapped in another widget
     ProfileScreen(),  // Add your ProfileScreen here
   ];
